@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>MyFirstMaven</groupId>
+    <artifactId>org.zhuhao</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.6</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.1</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/antlr/antlr -->
+        <dependency>
+            <groupId>antlr</groupId>
+            <artifactId>antlr</artifactId>
+            <version>2.7.7</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.webjars.npm/xpath -->
+        <dependency>
+            <groupId>org.webjars.npm</groupId>
+            <artifactId>xpath</artifactId>
+            <version>0.0.27</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/jaxen/jaxen -->
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+            <version>1.1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.wanghaomiao</groupId>
+            <artifactId>JsoupXpath</artifactId>
+            <version>2.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>jsr311-api</artifactId>
+            <version>1.1.1</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>3.2.2.RELEASE</version>
+            <scope>provided</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.56</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.6</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/net.sf.json-lib/json-lib -->
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.jsoup/jsoup -->
+        <dependency>
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.11.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>net.sf.json-lib</groupId>
+            <artifactId>json-lib</artifactId>
+            <version>2.4</version>
+            <classifier>jdk15</classifier>
+        </dependency>
+
+    </dependencies>
+
+
+</project>
