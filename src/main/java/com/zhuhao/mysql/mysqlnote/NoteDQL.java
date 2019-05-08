@@ -1,9 +1,5 @@
 package com.zhuhao.mysql.mysqlnote;
 
-import java.io.*;
-import java.util.SortedSet;
-import java.util.TreeSet;
-
 /**
  * 	DQL：数据查询语言
  *		操作对象：记录
@@ -64,7 +60,4 @@ import java.util.TreeSet;
  * @date 2019年4月29日
  */
 public class NoteDQL {
-    public static void main(String[] args) throws Exception {
-
-    }
 }
