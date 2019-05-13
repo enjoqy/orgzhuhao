@@ -21,7 +21,7 @@ import java.util.function.Function;
  * R apply(T t);
  * <p>
  * Predicate<T> ：断言型接口
- * boolean test(T t);
+ * boolean jdbctest(T t);
  * <p>
  * Lambda表达式的基础语法
  * 1.Java8中引入了一个新的操作符 “->” （箭头操作符或Lambda操作符）

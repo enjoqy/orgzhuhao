@@ -23,7 +23,6 @@ package com.zhuhao.mysql.mysqlnote;
  *				where 后面不能使用聚合函数 having可以
  *				having部分情况可以替代where，但是不推荐
  *
- *
  * 	系统函数：
  *		1.日期相关函数
  *			NOW(),SYSDATE(),CURDATE(),CURTIME();

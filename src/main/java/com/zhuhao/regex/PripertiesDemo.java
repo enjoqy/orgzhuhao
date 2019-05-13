@@ -16,7 +16,7 @@ public class PripertiesDemo {
         PrintStream ps = new PrintStream("testproperties.properties");
         p.store(ps, "这个是自动生成的properties配置文件");
 
-        PrintStream ps01 = new PrintStream("test.xml");
+        PrintStream ps01 = new PrintStream("jdbctest.xml");
         p.storeToXML(ps01, "这个是自动生成的xml配置文件");*/
 
       /*  InputStream is = null;
