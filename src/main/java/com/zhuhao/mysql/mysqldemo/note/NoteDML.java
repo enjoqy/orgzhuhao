@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote;
+package com.zhuhao.mysql.mysqldemo.note;
 
 /**
  * 	DML数据操作语言

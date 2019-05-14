@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote;
+package com.zhuhao.mysql.mysqldemo.note;
 
 /**
  *	多表操作

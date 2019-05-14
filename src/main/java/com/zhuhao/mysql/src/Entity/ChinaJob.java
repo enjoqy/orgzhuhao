@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote.Entity;
+package com.zhuhao.mysql.src.Entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

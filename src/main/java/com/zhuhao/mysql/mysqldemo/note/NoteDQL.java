@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote;
+package com.zhuhao.mysql.mysqldemo.note;
 
 /**
  * 	DQL：数据查询语言

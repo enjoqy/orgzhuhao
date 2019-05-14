@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote;
+package com.zhuhao.mysql.mysqldemo.note;
 /**
  * JDBC：
 	java操作数据库。jdbc是oracle公司指定的一套规范(一套接口)

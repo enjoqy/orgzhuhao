@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote.jdbctest;
+package com.zhuhao.mysql.mysqldemo.jdbctest;
 
 import java.io.IOException;
 import java.io.InputStream;

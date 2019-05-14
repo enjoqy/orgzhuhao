@@ -1,4 +1,4 @@
-package com.zhuhao.mysql.mysqlnote;
+package com.zhuhao.mysql.mysqldemo.note;
 /**
  * 	DDL数据库定义语言
  * 		操作数据库：

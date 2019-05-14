@@ -1,7 +1,7 @@
-package com.zhuhao.mysql.mysqlnote.jdbctest;
+package com.zhuhao.mysql.mysqldemo.jdbctest;
 
-import com.zhuhao.mysql.mysqlnote.Entity.ChinaJob;
-import com.zhuhao.mysql.mysqlnote.JDBCUtils.JDBCUtils;
+import com.zhuhao.mysql.mysqldemo.JDBCUtils.JDBCUtils;
+import com.zhuhao.mysql.src.Entity.ChinaJob;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

@@ -1,6 +1,6 @@
-package com.zhuhao.mysql.mysqlnote;
+package com.zhuhao.mysql.mysqldemo.note;
 
-/*
+/**
  *
  * 	一、数据库
  * 		1.定义：Database简称DB，web项目中的DataSource，数据的仓库，实现数据的持久化和管理。
