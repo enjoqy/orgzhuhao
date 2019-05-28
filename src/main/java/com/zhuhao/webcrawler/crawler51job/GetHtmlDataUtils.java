@@ -1,5 +1,6 @@
-package com.zhuhao.webcrawler;
+package com.zhuhao.webcrawler.crawler51job;
 
+import com.zhuhao.webcrawler.User;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.seimicrawler.xpath.JXDocument;
@@ -15,7 +16,11 @@ import java.util.List;
 public final class GetHtmlDataUtils {
 
 
-    //获取文章标题，城市的名字
+    /**
+     * 获取文章标题，城市的名字
+     * @param url
+     * @return
+     */
     public static String getTitle(String url) {
         Document doc = null;
         String cityName = "";

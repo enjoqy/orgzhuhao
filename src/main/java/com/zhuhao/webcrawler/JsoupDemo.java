@@ -16,7 +16,6 @@ public class JsoupDemo {
         String url = "http://www.xiaohuar.com/list-1-2.html";
         Connection connect = Jsoup.connect(url);
         Document doc = connect.get();
-//        System.out.println(doc);
         Elements elements = doc.select("img[src$=.jpg]");
         for (Object obj : elements) {
             System.out.println(obj);

@@ -1,4 +1,7 @@
-package com.zhuhao.webcrawler;
+package com.zhuhao.webcrawler.crawler51job;
+
+import com.zhuhao.webcrawler.GetHtmlDataUtils;
+import com.zhuhao.webcrawler.User;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -109,7 +112,7 @@ public final class DBUtils {
         Connection con = DBUtils.getConnection();
         PreparedStatement statement = null;
         try {
-            String sql = "CREATE TABLE IF NOT EXISTS `mydb`.`job_position_" + cityTableName + "`  (" +
+            String sql = "CREATE TABLE IF NOT EXISTS `mydb`.`" + cityTableName + "`  (" +
                     "  `id` int(11) NOT NULL AUTO_INCREMENT," +
                     "  `job_title` varchar(255) NULL COMMENT '职位'," +
                     "  `company_name` varchar(255) NULL COMMENT '公司名称'," +
@@ -166,10 +169,9 @@ public final class DBUtils {
      * 插入数据
      * @param url
      * @param table_name
-     * @param size
      * @return
      */
-    public static int insert(String url, String table_name, int size) {
+    public static void insert(String url, String table_name) {
         Connection con = DBUtils.getConnection();
         List<User> userList = GetHtmlDataUtils.getData(url);
         PreparedStatement statement = null;
@@ -186,8 +188,6 @@ public final class DBUtils {
                 statement.setString(5, user.getReleaseTime());
                 statement.execute();
                 sum++;
-                size++;
-                System.out.print("插入第\t" + sum + "\t条数据成功！\t");
                 System.out.println(user);
             }
         } catch (SQLException e) {
@@ -197,7 +197,6 @@ public final class DBUtils {
             closeResource(con, statement);
             System.out.println("插入数据到mysql数据库完成！此页共计：\t" + sum + "\t条数据");
         }
-        return size;
     }
 
     /**
