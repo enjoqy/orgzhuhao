@@ -23,13 +23,13 @@ public class MainClass {
             }
         }).start();*/
 
-        ExecutorService pool = Executors.newCachedThreadPool();
+        ExecutorService pool = Executors.newFixedThreadPool(3);
         for (int i = 0; i < 100; i++) {
             pool.submit(new Runnable() {
                 @Override
                 public void run() {
                     Station s = new Station();
-                    s.run1();
+                    s.run();
                 }
             });
         }

@@ -17,7 +17,7 @@ public class Demo002 {
         new Thread(new Runnable() {
             @Override
             public void run() {
-                Demo003.test009();
+                Demo03.test009();
             }
         }).start();*/
 

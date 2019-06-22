@@ -15,10 +15,10 @@ package com.zhuhao.threaddemo.threaddemo01;
  */
 public class Station {
 
-    static int tick = 1000;
+    static int tick = 100;
 
 
-    public void run1() {
+    public void run() {
         while (tick > 0) {
             synchronized ("11") {
                 if (tick > 0) {
@@ -29,7 +29,7 @@ public class Station {
                 }
             }
             try {
-                Thread.sleep(50);
+                Thread.sleep(1);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
