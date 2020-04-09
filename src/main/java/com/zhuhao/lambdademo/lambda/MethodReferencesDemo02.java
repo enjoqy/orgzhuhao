@@ -5,6 +5,8 @@ package com.zhuhao.lambdademo.lambda;
  */
 
 
+import org.junit.Test;
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiPredicate;
@@ -38,7 +40,7 @@ import java.util.function.BiPredicate;
  */
 public class MethodReferencesDemo02 {
 
-
+    @Test
     public void test03() {
         //方法的引用
         List<String> names = Arrays.asList("1", "2", "3");
@@ -49,7 +51,4 @@ public class MethodReferencesDemo02 {
         System.out.println(nihao);
     }
 
-    public static void main(String[] args) {
-
-    }
 }

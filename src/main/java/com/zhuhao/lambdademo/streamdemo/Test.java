@@ -2,11 +2,10 @@ package com.zhuhao.lambdademo.streamdemo;
 
 import com.zhuhao.lambdademo.entity.Artist;
 import com.zhuhao.lambdademo.entity.Employee;
+import org.apache.commons.lang.text.StrBuilder;
+import org.jaxen.expr.Step;
 
-import java.util.Arrays;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -31,7 +30,8 @@ public class Test {
     /*
      * 2.怎样用map和reduce方法数一数流中有多少个Employee呢？
      */
-    public static void test02() {
+    @org.junit.Test
+    public void test02() {
         List<Employee> employees = Arrays.asList(
                 new Employee(10010, "张三", 18, 9999.99),
                 new Employee(10011, "李四", 13, 9),
@@ -46,7 +46,8 @@ public class Test {
     /*
      * 3.连接字符串数组，逗号隔开，去掉首尾逗号
      */
-    public static void test03() {
+    @org.junit.Test
+    public void test03() {
         String[] str = {"a", "b", "c", "d"};
         String str1 = Arrays.stream(str).collect(Collectors.joining("+"));
         System.out.println(str1);
@@ -91,6 +92,85 @@ public class Test {
         return max.get();
     }
 
+    /**
+     * @return void
+     * @Author halk
+     * @Description 对集合中对象的某一个属性做单独处理
+     * @Date 2020/3/20 14:02
+     * @Param []
+     **/
+    @org.junit.Test
+    public void test11() {
+        List<Employee> employees = Arrays.asList(
+                new Employee(10010, "张三", 18, 9999.99),
+                new Employee(10011, "李四", 13, 9),
+                new Employee(10012, "王五", 14, 89),
+                new Employee(10013, "袁六", 15, 900),
+                new Employee(10014, "方七", 16, 977)
+        );
+        List<Integer> collect = employees.stream().map(x -> x.getAge()).collect(Collectors.toList());
+
+        collect.forEach(x -> System.out.println(x));
+    }
+
+    @org.junit.Test
+    public void test12() {
+        List<Employee> list = Arrays.asList(
+                new Employee(10010, "张三", 18, 9999.99),
+                new Employee(10011, "李四", 13, 9),
+                new Employee(10012, "王五", 14, 89),
+                new Employee(10013, "袁六", 15, 900),
+                new Employee(10014, "方七", 16, 977)
+        );
+        for (Employee employee : list) {
+            employee.setAge(1);
+        }
+
+        list.forEach(x -> System.out.println(x));
+    }
+
+    @org.junit.Test
+    public void test13() {
+
+        String str = "ab";
+
+        int i = str.lastIndexOf(",");
+        System.out.println(i);
+
+        if (str.lastIndexOf(",") != -1 && str.substring(str.lastIndexOf(",")).equals(",")){
+            System.out.println("shide");
+            System.out.println(str.substring(0, str.lastIndexOf(",")));
+        }else {
+            System.out.println(str);
+        }
+
+        int a = 2;
+
+        System.out.println("2".equals(String.valueOf(a)));
+
+        StrBuilder builder = new StrBuilder("hello");
+        builder.append("1");
+        builder.insert(0, "0");
+        System.out.println(builder);
+
+        ArrayList<Map<String, String>> list = new ArrayList<>();
+
+        Map<String, String> map = new HashMap<>();
+        map.put("1", "11");
+        map.put("2", "22");
+
+        list.add(map);
+
+        Map<String, String> map2 = new HashMap<>();
+        map2.put("1", "11");
+        map2.put("2", "22");
+
+        list.add(map2);
+
+        List<String> collect = list.stream().map(x -> x.get("1")).collect(Collectors.toList());
+        System.out.println(collect.toString());
+
+    }
 
     public static void main(String[] args) {
         String str = "Abcd";

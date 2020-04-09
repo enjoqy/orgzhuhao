@@ -7,7 +7,6 @@ import java.util.function.Function;
 
 public class PersonFactory implements Function<String, Object> {
 
-
     @Override
     public Object apply(String type) {
         switch (type) {
