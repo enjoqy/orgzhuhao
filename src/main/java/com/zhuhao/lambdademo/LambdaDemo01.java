@@ -87,4 +87,18 @@ public class LambdaDemo01 {
         System.out.println(f.apply("aaa"));
     }
 
+    @Test
+    public void test001(){
+        employeeList.add(new Employee(1, "a", 2, 10.0));
+        employeeList.add(new Employee(2, "a", 2, 11.0));
+        employeeList.add(new Employee(2, "a", 2, 12.0));
+        employeeList.add(new Employee(1, "a", 2, 13.0));
+
+        List<Integer> list = employeeList.stream()
+                .map(employee -> employee.getId())
+                .distinct()
+                .collect(Collectors.toList());
+        list.forEach(System.out::println);
+    }
+
 }

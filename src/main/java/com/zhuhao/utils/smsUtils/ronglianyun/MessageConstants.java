@@ -1,4 +1,4 @@
-package com.zhuhao.utils.smsUtils;
+package com.zhuhao.utils.smsUtils.ronglianyun;
 
 public class MessageConstants {
 

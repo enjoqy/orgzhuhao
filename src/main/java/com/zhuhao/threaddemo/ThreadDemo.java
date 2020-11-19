@@ -1,5 +1,9 @@
 package com.zhuhao.threaddemo;
 
+import org.junit.Test;
+
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -93,5 +97,36 @@ public class ThreadDemo {
         FutureTask<String> futureTask = new FutureTask<>(d3);
         Thread thread1 = new Thread(futureTask);
         thread1.start();
+    }
+
+    @Test
+    public void test05() throws InterruptedException {
+        System.out.println("start");
+        new Thread(() -> {
+            try {
+                Thread.sleep(2000);
+                System.out.println("thread end");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }).start();
+        System.out.println("33333333");
+        Thread.sleep(1000);
+        System.out.println("end");
+    }
+
+    @Test
+    public void test06(){
+        ArrayList<Object> list = new ArrayList<>();
+
+        HashMap<Object, Object> map = new HashMap<>();
+
+        for (Object o : list) {
+            System.out.println(o);
+        }
+
+        System.out.println(map.get("1111"));
+
+
     }
 }

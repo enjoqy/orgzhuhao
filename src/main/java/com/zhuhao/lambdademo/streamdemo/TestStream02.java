@@ -1,6 +1,7 @@
 package com.zhuhao.lambdademo.streamdemo;
 
 import com.zhuhao.lambdademo.entity.Employee;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -24,6 +25,11 @@ public class TestStream02 {
             new Employee(10014, "方七", 16, 977),
             new Employee(10014, "方七", 16, 977)
     );
+
+    @Test
+    public void test10(){
+        employees.stream().distinct().filter(x -> x.getAge() >15 && x.getSalary() > 1000).forEach(System.out::println);
+    }
 
     /*
      * 筛选与切片

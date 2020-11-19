@@ -2,6 +2,10 @@ package com.zhuhao.jsondemo.FASTJsonDemo;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import org.junit.Test;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,5 +61,31 @@ public class FASTJson {
 
     public static void main(String[] args) {
         test02();
+    }
+
+
+    /**
+     * @Author halk
+     * @Description 对json中的数组进行解析
+     * @Date 2020/6/10 0010 17:33
+     * @Param []
+     * @return void
+     **/
+    @Test
+    public void test03() throws JsonProcessingException {
+
+        String json = "{\"skuIds\": [10521526784,5835263]}";
+        ObjectMapper mapper = new ObjectMapper();
+        JsonNode jsonNode = mapper.readTree(json).get("skuIds");
+        if (jsonNode.isArray()) {
+            jsonNode.forEach(System.out::println);
+        }
+
+
+        JSONObject jsonObject = JSON.parseObject(json);
+        String skuIds1 = jsonObject.getString("skuIds");
+        List<Long> longs = JSON.parseArray(skuIds1, Long.class);
+        longs.forEach(System.out::println);
+
     }
 }

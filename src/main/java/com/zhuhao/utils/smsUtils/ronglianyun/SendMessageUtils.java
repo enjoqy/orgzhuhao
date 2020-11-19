@@ -1,4 +1,4 @@
-package com.zhuhao.utils.smsUtils;
+package com.zhuhao.utils.smsUtils.ronglianyun;
 
 import com.cloopen.rest.sdk.CCPRestSmsSDK;
 import com.google.common.collect.Maps;
@@ -14,9 +14,9 @@ public class SendMessageUtils {
      * @param modelId  模板id
      * @param time
      *
-     * 备注： 如果报   Connection to https://app.cloopen.com:8883 refused  SDKTestGetSubAccounts result={statusMsg=网络错误, statusCode=172001}  
+     * 备注： 如果报   Connection to https://app.cloopen.com:8883 refused  SDKTestGetSubAccounts result={statusMsg=网络错误, statusCode=172001}
      * 			需要配置host文件最后加上一行		42.121.254.126  app.cloopen.com  ，这样子就好了
-     * 
+     *
      * @return
      */
     public static HashMap<String, HashMap<String, Object>> sendSms(String phone, String code, String intervalTime, String modelId, Long time){
