@@ -13,10 +13,10 @@ public class JsoupDemo {
     }
 
     public static void test01() throws IOException {
-        String url = "http://www.xiaohuar.com/list-1-2.html";
+        String url = "http://www.baidu.com";
         Connection connect = Jsoup.connect(url);
         Document doc = connect.get();
-        Elements elements = doc.select("img[src$=.jpg]");
+        Elements elements = doc.select("img[src$=.png]");
         for (Object obj : elements) {
             System.out.println(obj);
         }

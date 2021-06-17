@@ -6,12 +6,15 @@ package org.test;
  */
 public class A {
 
-    public A() {
-        super();
-        System.out.println("aaa");
-    }
+    private static A a;
+    static String aa = "123";
 
-    public void play(){
-        System.out.println("A");
+
+    public static void main(String[] args) {
+        System.out.println(a.aa);
+        System.out.println(a);
+        System.out.println(new A());
+        System.out.println(new A());
+
     }
 }

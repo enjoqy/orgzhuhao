@@ -92,6 +92,9 @@ public class PrototypeTest {
 
         User user2 = (User)user.clone();
 
+        System.out.println(user);
+        System.out.println(user2);
+
         //判断引用地址以及内容是否相同
         System.out.println(user == user2);
         System.out.println(user.equals(user2));
