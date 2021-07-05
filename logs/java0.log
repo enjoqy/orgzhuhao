@@ -1,0 +1,28 @@
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+严重: severe
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+警告: warning
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+详细: fine
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+较详细: finer
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+信息: info
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+非常详细: finest
+1月 12, 2021 9:45:53 下午 com.zhuhao.log.jul.JulTest testLogProperties
+配置: config
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+严重: severe
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+警告: warning
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+详细: fine
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+较详细: finer
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+信息: info
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+非常详细: finest
+1月 12, 2021 9:56:03 下午 com.zhuhao.log.jul.JulTest testLogProperties
+配置: config

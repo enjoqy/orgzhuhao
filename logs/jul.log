@@ -1,0 +1,14 @@
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+严重: severe
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+警告: warning
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+信息: info
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+配置: config
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+详细: fine
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+较详细: finer
+1月 12, 2021 9:42:24 下午 com.zhuhao.log.jul.JulTest julLogConfig
+非常详细: finest
